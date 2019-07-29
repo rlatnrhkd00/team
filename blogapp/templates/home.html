@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+    {% block contents %}
+
+  <body>
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-5">동신광장에 오신걸 환영합니다!</h1>
+      <h3>학우들간의 자유로운 의사소통이 가능합니다.<h3>
+      <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">더 알아보기 &raquo;</a></p>-->
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-6">
+        <h2>자유게시판</h2>
+        <p>학교생활에 있어 자유로운 대화를 나누어주세요.</p>
+        <p><a class="btn btn-secondary" href="{% url 'freeboard' %}" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-6">
+        <h2>장터게시판</h2>
+        <p>중고거래를 통해 소중한 용돈을 아낍시다.</p>
+        <p><a class="btn btn-secondary" href="{% url 'dealerboard' %}" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-6">
+        <h2>익명게시판</h2>
+        <p>익명으로 고민을 나누어요. </p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-6">
+         <h2>질문게시판</h2>
+         <p>학교생활에 있어 궁금한 내용을 학우들과 나누어 보아요.</p>
+         <p><a class="btn btn-secondary" href="{% url 'questionboard' %}" role="button">View details &raquo;</a></p>
+        </div>
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+
+</main>
+
+<footer class="container">
+  <p>&copy; Company 2017-2019</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    </body>
+
+
+{% endblock %}

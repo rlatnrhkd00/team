@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+<br>
+<br>
+<br><br><br><br><br><br><br>
+  <center>
+  <body>
+      <div style="width: 300px; height: 90px;">
+    <form method = 'POST' action="{%url 'signup'%}">
+        {% csrf_token %}
+  <div class="text-center mb-4">
+    <img src="https://www.dsu.ac.kr/kr/_Img/Content/uisymbol_img01.gif" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">동신대학교 커뮤니티</h1>
+    <p>회원 정보를 입력하세요</a></p>
+  </div>
+
+  <div class="form-label-group">
+    <input name="username" type="text" value="" placeholder="아이디" required autofocus>
+    <br>
+    <br>
+  </div>
+
+  <div class="form-label-group">
+    <input name="password1" type="password" value="" placeholder="비밀번호" required>
+    <br>
+    <br>
+  </div>
+
+  <div class="form-label-group">
+      <input name="password2" type="password" value="" placeholder="비밀번호확인" required>
+      <br>
+      <br>
+    </div>
+
+
+  <button class="btn btn-lg btn-primary btn-block" style="width: 150px; height: 45px;" type="submit">회원가입</button>
+  <a class="nav-item nav-link" href="{% url 'login' %}">로그인</a>
+</form>
+</div>
+</body>
+</center>
+{% endblock  %}
