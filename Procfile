@@ -1,0 +1,1 @@
+web: gunicorn dsuteamproj.wsgi --log-file -
